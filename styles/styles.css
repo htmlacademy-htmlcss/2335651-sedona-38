@@ -59,14 +59,15 @@ body{
 }
 
 /*hero*/
-.background-hero{
+.hero{
     background-image: url(../images/index-background.jpg);
     background-color: rgba(255, 255, 255, 1);
     color:rgba(0, 0, 0, 1);
     background-repeat: no-repeat;
 }
 
-.hero blockquote{
+/*advantages*/
+.advantages blockquote{
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -74,7 +75,6 @@ body{
     text-align: center;
 }
 
-/*advantages*/
 .advantages-item{
     text-align: center;
 }
