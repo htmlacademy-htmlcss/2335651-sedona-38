@@ -19,7 +19,7 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF
 }
 
 /* header */
@@ -135,6 +135,11 @@ body{
 
 .subscription h2{
     color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .subscription p{
@@ -169,14 +174,6 @@ body{
     line-height: 78px;
     font-weight: 700;
     color: #FFFFFF;
-}
-
-.main-inner h2{
-    text-align: center;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 /*filter*/
@@ -226,6 +223,13 @@ body{
 }
 
 /*catalog*/
+.catalog-title{
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: 700;
+}
+
 .product-card-link{
     font-size: 24px;
     line-height: 28px;
@@ -300,4 +304,15 @@ body{
     color: #000000;
     font-weight: 400;
     text-decoration: none;
+}
+
+/*catalog-subscription*/
+.catalog-subscription{
+    background-color: #FFFFFF;
+}
+.catalog-subscription h2{
+    color: #000000;
+}
+.catalog-subscription p{
+    color: #333333;
 }
