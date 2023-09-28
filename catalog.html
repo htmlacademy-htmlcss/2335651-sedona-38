@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -38,8 +39,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Кнопка "Хочу сюда!"
+              <span class="header-button">
+                Хочу сюда!
               </span>
             </a>
           </li>
@@ -116,10 +117,8 @@ name="home-group" value="apartments">
                             </li>
                         </ul>
                 </fieldset>
-                <button class="button" type="submit">Применить</button>
-                <button class="button-close" type="button">
-                    <span class="visually-hidden" type="reset">Сбросить</span>
-                </button>
+                <button class="filter-button" type="submit">Применить</button>
+                <button class="filter-button-close" type="reset">Сбросить</button>
             </form>
         </section>
 
@@ -147,8 +146,8 @@ name="home-group" value="apartments">
                     </a>
                     <span class="product-card-name">Гостиница</span>
                     <span class="product-card-price">От 4000 ₽</span>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <a class="product-card-button button" href="#">В избранное</a>
+                    <a class="card-button-detail button" href="#">Подробнее</a>
+                    <a class="card-button-favourites button" href="#">В избранное</a>
                     <span class="product-card-rating">Рейтинг: 8,5</span>
                 </li>
 
@@ -159,8 +158,8 @@ name="home-group" value="apartments">
                     </a>
                     <span class="product-card-name">Гостиница</span>
                     <span class="product-card-price">От 5000 ₽</span>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <a class="product-card-button button" href="#">В избранном</a>
+                    <a class="card-button-detail button" href="#">Подробнее</a>
+                    <a class="card-button-favourites card-button-active button" href="#">В избранном</a>
                     <span class="product-card-rating">Рейтинг: 9,2</span>
                 </li>
                 <li class="product-card-item">
@@ -170,8 +169,8 @@ name="home-group" value="apartments">
                     </a>
                     <span class="product-card-name">Гостиница</span>
                     <span class="product-card-price">От 2500 ₽</span>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <a class="product-card-button button" href="#">В избранное</a>
+                    <a class="card-button-detail button" href="#">Подробнее</a>
+                    <a class="card-button-favourites button" href="#">В избранное</a>
                     <span class="product-card-rating">Рейтинг: 6,9</span>
                 </li>
                 <li class="product-card-item">
@@ -181,30 +180,30 @@ name="home-group" value="apartments">
                     </a>
                     <span class="product-card-name">Гостиница</span>
                     <span class="product-card-price">От 1500 ₽</span>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                    <a class="product-card-button button" href="#">В избранное</a>
+                    <a class="card-button-detail button" href="#">Подробнее</a>
+                    <a class="card-button-favourites button" href="#">В избранное</a>
                     <span class="product-card-rating">Рейтинг: 5,0</span>
                 </li>
             </ul>
 
             <ul class="pagination">
                 <li class="pagination-item">
-                    <a class="product-card-link pagination-current" href="#">1</a>
+                    <a class="pagination-current pagination-current-active" href="#">1</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="product-card-link pagination-current" href="#">2</a>
+                    <a class=" pagination-current" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="product-card-link pagination-current" href="#">3</a>
+                    <a class=" pagination-current" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="product-card-link pagination-current" href="#">4</a>
+                    <a class=" pagination-current" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="product-card-link pagination-current" href="#">...</a>
+                  <a class="pagination-current-hidden" href="#">...</a>
               </li>
               <li class="pagination-item">
-                <a class="product-card-link pagination-current" href="#">10</a>
+                <a class=" pagination-current" href="#">10</a>
             </li>
             </ul>
         </section>

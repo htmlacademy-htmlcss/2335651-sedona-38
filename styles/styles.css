@@ -32,12 +32,22 @@ body{
     text-align: center;
 }
 
+.header-button{
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 /*main*/
 .main-index h2{
     text-align: center;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .subtitle{
@@ -56,14 +66,12 @@ body{
     background-repeat: no-repeat;
 }
 
-.hero{
-    text-align: center;
-}
-
 .hero blockquote{
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /*advantages*/
@@ -106,4 +114,190 @@ body{
 .services-item p{
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
+}
+
+/*search*/
+.search-link{
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*subscription*/
+.subscription{
+    background-color:#756157;
+}
+
+.subscription h2{
+    color: #FFFFFF;
+}
+
+.subscription p{
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.subscription-button{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*footer*/
+.footer-contact-phone{
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*catalog.html*/
+.main-inner h1{
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.main-inner h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*filter*/
+.filter{
+    background-color:#756157 ;
+}
+
+.breadcrumbs-link{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.catalog-filter-title{
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.catalog-filter-item{
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.filter-button{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+
+.filter-button-close{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*catalog*/
+.product-card-link{
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.product-card-name{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.card-button-detail{
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.card-button-favourites{
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+}
+
+.card-button-active{
+    background-color: #7DB54F;
+}
+
+.product-card-rating{
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+/*pagination*/
+.pagination-current{
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+
+.pagination-current-active{
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.pagination-current-hidden{
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
 }
