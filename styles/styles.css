@@ -130,7 +130,8 @@ body{
 
 /*subscription*/
 .subscription{
-    background-color:#756157;
+    background-image: url(../images/bacground-subscription.jpg);
+    background-repeat: no-repeat;
 }
 
 .subscription h2{
@@ -178,7 +179,8 @@ body{
 
 /*filter*/
 .filter{
-    background-color:#756157 ;
+    background-image: url(../images/bacground-filter.jpg);
+    background-repeat: no-repeat;
 }
 
 .breadcrumbs-link{
