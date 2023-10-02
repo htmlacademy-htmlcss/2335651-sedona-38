@@ -60,10 +60,12 @@ body{
 
 /*hero*/
 .hero{
-    background-image: url(../images/index-background.jpg);
+    background-image: url(../images/background-index.jpg);
     background-color: rgba(255, 255, 255, 1);
-    color:rgba(0, 0, 0, 1);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center bottom;
+    color:rgba(0, 0, 0, 1);
 }
 
 /*advantages*/
@@ -130,8 +132,11 @@ body{
 
 /*subscription*/
 .subscription{
-    background-image: url(../images/bacground-subscription.jpg);
+    background-image: url(../images/background-subscription.jpg);
+    background-color: rgba(255, 255, 255, 1);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .subscription h2{
@@ -179,8 +184,11 @@ body{
 
 /*filter*/
 .filter{
-    background-image: url(../images/bacground-filter.jpg);
+    background-image: url(../images/background-filter.jpg);
+    background-color: rgba(255, 255, 255, 1);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .breadcrumbs-link{
