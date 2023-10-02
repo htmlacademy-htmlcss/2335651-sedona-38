@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
           <a href="index.html">
             <img src="images/logotype.svg" width="140" height="70" alt="Логотип Седона">
@@ -48,7 +48,7 @@
       </nav>
     </header>
         <main class="main-inner">
-            <section class="filter">
+            <section class="filter" data-test="filter">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
@@ -122,7 +122,7 @@ name="home-group" value="apartments">
             </form>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="catalog-title">Найдено страниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала дешёвое</option>
@@ -220,7 +220,7 @@ name="home-group" value="apartments">
             </ul>
         </section>
 
-        <section class="subscription catalog-subscription">
+        <section class="subscription catalog-subscription" data-test="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -230,7 +230,7 @@ name="home-group" value="apartments">
           </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
