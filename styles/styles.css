@@ -19,9 +19,16 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: rgba(0, 0, 0, 1);
-    background-color: #FFFFFF
+    background-color: rgba(242, 242, 242, 1);
+    margin: 0 auto;
 }
 
+.container {
+    background-color: rgba(255, 255, 255, 1);
+    width: 1200px;
+    margin: 0 auto;
+
+}
 /* header */
 .navigation-link{
     font-weight: 700;
@@ -66,6 +73,7 @@ body{
     background-repeat: no-repeat;
     background-position: center bottom;
     color:rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 /*advantages*/
