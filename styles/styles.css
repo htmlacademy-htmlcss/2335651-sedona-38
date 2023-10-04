@@ -27,9 +27,25 @@ body{
     background-color: rgba(255, 255, 255, 1);
     width: 1200px;
     margin: 0 auto;
-
 }
 /* header */
+.navigation{
+    width: 1060px;
+    display: flex;
+    margin: 0 auto;
+}
+.navigation-list{
+    width: 430px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.navigation-user{
+    width: 300px;
+    margin-left: auto;
+}
+
 .navigation-link{
     font-weight: 700;
     font-size: 20px;
@@ -73,7 +89,12 @@ body{
     background-repeat: no-repeat;
     background-position: center bottom;
     color:rgba(0, 0, 0, 1);
-    text-align: center;
+    height: 485px;
+}
+
+.hero-logotype{
+    display: block;
+    margin: 0 auto;
 }
 
 /*advantages*/
@@ -83,6 +104,14 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .advantages-item{
@@ -95,24 +124,38 @@ body{
     font-weight: 700;
 }
 
-.advantages-hero{
+.advantages-hero-block{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(130, 179, 211, 1);
+    display: flex;
+}
+.advantages-hero-reverse{
+    flex-direction: row-reverse;
 }
 
-.advantages-second{
+.advantages-secondary-block{
     background-color: rgba(131, 179, 211, 0.12);
+    color: rgba(51, 51, 51, 1);
+    width: 400px;
 }
 
-.advantages-second p{
-    color: rgba(51, 51, 51, 1);
-}
-.advantages-center{
+.advantages-center-block{
     background-color:rgba(131, 179, 211, 0.2);
+}
+
+/*Services*/
+.services-list{
+    display: flex;
+    justify-content: space-between;
 }
 
 .services-item{
     text-align: center;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-center-block{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .services-title{
@@ -136,6 +179,9 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    display: block;
+    width: 376px;
+    margin: 0 auto;
 }
 
 /*subscription*/
@@ -174,6 +220,15 @@ body{
 }
 
 /*footer*/
+.page-footer{
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
 .footer-contact-phone{
     color: #000000;
     font-size: 40px;
