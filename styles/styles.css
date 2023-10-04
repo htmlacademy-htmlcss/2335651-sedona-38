@@ -13,7 +13,9 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
-
+html{
+    height: 100%;
+}
 body{
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -27,8 +29,24 @@ body{
     background-color: rgba(255, 255, 255, 1);
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
 }
-/* header */
+
+/*Buttons*/
+.button{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+}
+
+/* Header */
 .navigation{
     width: 1060px;
     display: flex;
@@ -38,7 +56,7 @@ body{
     width: 430px;
     margin: 0;
     padding: 0;
-    margin-left: auto;
+    margin-left: 46px;
 }
 
 .navigation-user{
@@ -58,13 +76,12 @@ body{
 .header-button{
     background-color: #756157;
     color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
 }
-/*main*/
+/*Main*/
+.main-container{
+    flex-grow: 1;
+}
+
 .main-index h2{
     text-align: center;
     font-size: 30px;
@@ -81,7 +98,7 @@ body{
     color: rgba(51, 51, 51, 1);
 }
 
-/*hero*/
+/*Hero*/
 .hero{
     background-image: url(../images/background-index.jpg);
     background-color: rgba(255, 255, 255, 1);
@@ -97,7 +114,7 @@ body{
     margin: 0 auto;
 }
 
-/*advantages*/
+/*Advantages*/
 .advantages blockquote{
     font-size: 30px;
     line-height: 36px;
@@ -169,7 +186,7 @@ body{
     color: rgba(51, 51, 51, 1);
 }
 
-/*search*/
+/*Search*/
 .search-link{
     background-color: #756157;
     color: #FFFFFF;
@@ -184,15 +201,18 @@ body{
     margin: 0 auto;
 }
 
-/*subscription*/
-.subscription{
+/*Subscription*/
+.index-subscription{
     background-image: url(../images/background-subscription.jpg);
     background-color: rgba(255, 255, 255, 1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-
+.subscription-content{
+    width: 684px;
+    margin: 0 auto;
+}
 .subscription h2{
     color: #FFFFFF;
     text-align: center;
@@ -214,12 +234,9 @@ body{
     color: #FFFFFF;
     font-size: 20px;
     line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
 }
 
-/*footer*/
+/*Footer*/
 .page-footer{
     width: 1060px;
     display: flex;
@@ -237,7 +254,7 @@ body{
     text-decoration: none;
 }
 
-/*catalog.html*/
+/*Catalog.html*/
 .main-inner h1{
     font-size: 60px;
     line-height: 78px;
@@ -245,13 +262,18 @@ body{
     color: #FFFFFF;
 }
 
-/*filter*/
+/*Filter*/
 .filter{
     background-image: url(../images/background-filter.jpg);
     background-color: rgba(255, 255, 255, 1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+}
+
+.filter-content{
+    width: 1060px;
+    margin: 0 auto;
 }
 
 .breadcrumbs-link{
@@ -278,24 +300,38 @@ body{
 .filter-button{
     background-color: #82B3D3;
     color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
 }
 
 .filter-button-close{
     color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
-/*catalog*/
+/*Catalog*/
+.catalog{
+    width: 1060px;
+    margin: 0 auto;
+}
+.catalog-filter{
+    display: flex;
+}
+
+.filter-buttons{
+    margin-left: auto;
+}
+
+.catalog-sorting{
+    display: flex;
+    align-items: center;
+}
+
+.catalog-button{
+    margin-left: auto;
+}
+
+.select-control{
+    margin-left: 220px;
+}
+
 .catalog-title{
     font-size: 30px;
     line-height: 36px;
@@ -321,25 +357,11 @@ body{
 .card-button-detail{
     background-color: #756157;
     color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    text-decoration: none;
 }
 
 .card-button-favourites{
     background-color: #82B3D3;
     color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    text-decoration: none;
 }
 
 .card-button-active{
@@ -355,7 +377,7 @@ body{
     background-color: #F2F2F2;
 }
 
-/*pagination*/
+/*Pagination*/
 .pagination-current{
     font-size: 20px;
     line-height: 36px;
@@ -379,7 +401,7 @@ body{
     text-decoration: none;
 }
 
-/*catalog-subscription*/
+/*Catalog-subscription*/
 .catalog-subscription{
     background-color: #FFFFFF;
 }
