@@ -107,7 +107,7 @@ body{
 /*Hero*/
 .hero{
     background-image: url(../images/background-index.jpg);
-    background-color: rgba(255, 255, 255, 1);
+    background-color:rgb(102, 164, 163);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -216,7 +216,7 @@ body{
 /*Subscription*/
 .index-subscription{
     background-image: url(../images/background-subscription.jpg);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(102, 164, 163);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -282,7 +282,7 @@ body{
 /*Filter*/
 .filter{
     background-image: url(../images/background-filter.jpg);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(102, 164, 163);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
