@@ -106,7 +106,7 @@ body{
 
 /*Hero*/
 .hero{
-    background-image: url(../images/background-index.jpg);
+    background-image: url(../images/index-background.jpg);
     background-color:rgb(102, 164, 163);
     background-size: cover;
     background-repeat: no-repeat;
