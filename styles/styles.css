@@ -33,8 +33,17 @@ body{
     flex-direction: column;
     min-height: 100%;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-    ;
+}
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*Buttons*/
@@ -64,11 +73,13 @@ body{
     margin: 0;
     padding: 0;
     margin-left: 46px;
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation-user{
-    width: 300px;
+    max-width: 300px;
     margin-left: auto;
 }
 
@@ -79,6 +90,13 @@ body{
     color:rgba(0, 0, 0, 1);
     text-decoration: none;
     text-align: center;
+    padding: 20px 16px;
+    display: block;
+}
+
+.navigation-user .navigation-link{
+    min-width: 16px;
+    min-height: 22px;
 }
 
 .header-button{
@@ -120,6 +138,8 @@ body{
 .hero-logotype{
     display: block;
     margin: 0 auto;
+    padding-top: 51px;
+    margin-bottom: 84px;
 }
 
 /*Advantages*/
@@ -137,7 +157,7 @@ body{
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 .advantages-item{
@@ -177,6 +197,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .services-item{
@@ -269,7 +290,7 @@ body{
 }
 
 .footer-social-list{
-    list-style: none;
+    list-style-type: none;
 }
 
 .footer-contact-phone{
@@ -302,7 +323,7 @@ body{
     margin: 0 auto;
 }
 .breadcrumbs{
-    list-style: none;
+    list-style-type: none;
 }
 
 .breadcrumbs-link{
