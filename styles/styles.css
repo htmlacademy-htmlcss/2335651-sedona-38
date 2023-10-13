@@ -350,6 +350,16 @@ body{
 
 .footer-social-list{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-item{
+    width: 47px;
+    height: 40px;
+    background-color: #82B3D3;
 }
 
 .footer-contact-phone{
