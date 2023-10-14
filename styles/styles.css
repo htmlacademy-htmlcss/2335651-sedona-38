@@ -17,15 +17,17 @@ html{
     height: 100%;
 }
 body{
+    height: 100%;
+    min-width: 1280px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: rgba(0, 0, 0, 1);
     background-color: rgba(242, 242, 242, 1);
-    margin: 0 auto;
+    margin: 0;
 }
 
-.container {
+.page-container {
     background-color: rgba(255, 255, 255, 1);
     width: 1200px;
     margin: 0 auto;
@@ -59,9 +61,16 @@ body{
 }
 
 /* Header */
+.logo{
+    display: block;
+    margin-bottom: -6px;
+    position: relative;
+}
+
 .page-header{
     display: flex;
     padding: 0 70px;
+    min-height: 64px;
 }
 
 .navigation{
@@ -107,6 +116,8 @@ body{
 /*Main*/
 .main-container{
     flex-grow: 1;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main-index h2{
@@ -305,6 +316,7 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 96px;
+    margin-bottom: 20px;
 }
 
 .subscription p{
@@ -312,6 +324,13 @@ body{
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.subscription-form{
+    display: flex;
+    height: 52px;
 }
 
 .subscription-button{
@@ -320,7 +339,6 @@ body{
     font-size: 20px;
     line-height: 36px;
     width: 232px;
-    height: 52px;
     margin: 0;
     font-family: 'PT Sans';
 }
@@ -334,7 +352,6 @@ body{
     line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
     width: 452px;
-    height: 52px;
     margin: 0;
 }
 
@@ -376,6 +393,9 @@ body{
     line-height: 78px;
     font-weight: 700;
     color: #FFFFFF;
+    padding-top: 35px;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 /*Filter*/
@@ -385,6 +405,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
+    min-height: 412px
 }
 
 .filter-content{
@@ -393,6 +414,9 @@ body{
 }
 .breadcrumbs{
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .breadcrumbs-link{
@@ -403,11 +427,23 @@ body{
     text-decoration: none;
 }
 
+.catalog-filter-group{
+    border: none;
+    margin: 0;
+}
+
+.catalog-filter-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .catalog-filter-title{
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
     font-weight: 700;
+    margin-bottom: 32px;
 }
 
 .catalog-filter-item{
@@ -415,15 +451,32 @@ body{
     line-height: 23px;
     color: #FFFFFF;
     font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.catalog-filter-item:last-child{
+    margin-bottom: 0;
+}
+
+.filter-buttons{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .filter-button{
     background-color: #82B3D3;
     color: #FFFFFF;
+    width: 191px;
+    height: 36px;
+    margin-bottom: 32px;
 }
 
 .filter-button-close{
     color: #FFFFFF;
+    width: 191px;
+    height: 36px;
 }
 
 /*Catalog*/
@@ -435,13 +488,11 @@ body{
     display: flex;
 }
 
-.filter-buttons{
-    margin-left: auto;
-}
-
 .catalog-sorting{
     display: flex;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .catalog-button{
@@ -457,12 +508,32 @@ body{
     line-height: 36px;
     color: #000000;
     font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.select-control{
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 1);
+    width: 292px;
+    height: 49px;
+    border: 2px solid rgba(229, 229, 229, 1);
+    margin-left: 200px;
 }
 
 /*Cards*/
 .product-card {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+.product-card-conent{
+    padding: 20px;
 }
 
 .product-card-price{
@@ -472,7 +543,6 @@ body{
     font-weight: 400;
     display: flex;
     justify-content: space-between;
-    width: 300px;
 }
 
 .card-link-title{
@@ -489,6 +559,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid rgba(230, 230, 230, 1);
 }
 
 .card-button-detail{
@@ -500,7 +571,6 @@ body{
 .card-button{
     display: flex;
     justify-content: space-between;
-    width: 300px;
 
 }
 
@@ -517,7 +587,6 @@ body{
 .stars{
     display: flex;
     justify-content: space-between;
-    width: 300px;
 }
 
 .product-card-rating{
@@ -534,34 +603,54 @@ body{
 /*Pagination*/
 .pagination{
     list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.pagination:last-child{
+    margin-right: 0;
+}
+
+.pagination-item{
+    width: 60px;
+    height: 60px;
+    background-color: #82B3D3;  
+    margin-right: 8px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .pagination-current{
-    font-size: 20px;
-    line-height: 36px;
-    color: #FFFFFF;
-    font-weight: 700;
-    text-align: center;
-    background-color: #82B3D3;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .pagination-current-active{
-    color: #000000;
-    background-color: #F2F2F2;
+    color: rgba(0, 0, 0, 1);
 }
 
 .pagination-current-hidden{
+    color: rgba(0, 0, 0, 1);
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
     font-weight: 400;
     text-decoration: none;
+}
+
+.pagination-item-hidden{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.pagination-item-active{
+    background-color: #F2F2F2;
 }
 
 /*Catalog-subscription*/
 .catalog-subscription{
     background-color: #FFFFFF;
+    margin-bottom: 104px;
 }
 .catalog-subscription h2{
     color: #000000;
