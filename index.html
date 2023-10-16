@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="container">
+    <div class="page-container">
       <header class="page-header" data-test="header">
-        <a href="index.html">
+        <a class="logo" href="index.html">
           <img src="images/logotype.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="navigation">
@@ -39,8 +39,8 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="button header-button">
+              <a class="navigation-link navigation-button" href="#">
+                <span class="button">
                   Хочу сюда!
                 </span>
               </a>
@@ -57,7 +57,7 @@
 
         <section class="advantages" data-test="advantages">
           <blockquote>Седона — небольшой городок в Аризоне, заслуживающий большего!</blockquote>
-          <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="subtitle advantages-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages-list">
               <li class="advantages-item advantages-hero-block">
@@ -84,14 +84,14 @@
                   <h3 class="advantages-title">Там есть мост дьявола</h3>
                   <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-                <img src="images/photo-2.jpg" width="800" height="385" alt="Фотография гостиницы">
+                <img src="images/photo-2.jpg" width="800" height="385" alt="Фотография Моста Дьявола">
               </li>
             </ul>
           </section>
 
           <section class="services">
             <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
+            <p class="subtitle services-subtitle">Опытный персонал и качественное обслуживание!</p>
             <ul class="services-list">
               <li class="services-item">
                 <h3 class="services-title">Жильё</h3>
@@ -110,15 +110,15 @@
 
         <section class="search" data-test="search">
           <h2>Заинтересовались?</h2>
-          <p class="subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="subtitle search-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-link" href="catalog.html">
-            ПОИСК ГОСТИНИЦЫ В седоне
+            <span class="button search-button">ПОИСК ГОСТИНИЦЫ В седоне</span>
           </a>
         </section>
 
         <section class="subscription index-subscription" data-test="subscribe">
             <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <input type="text" name="e-mail" value="Ваш e-mail">
               <button class="button subscription-button" type="submit">Подписаться</button>
@@ -129,18 +129,21 @@
       <footer class="page-footer" data-test="footer">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-button" href="https://vk.com/htmlacademy">
+              <a class="footer-button button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
+                <img src="#" width="24" height="14" alt="ВКонтакте">
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy ">
+              <a class="footer-button button" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграм</span>
+                <img src="#" width="18" height="15" alt="Телеграм">
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-button button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">ЮТюб</span>
+                <img src="#" width="22" height="17" alt="ЮТюб">
               </a>
             </li>
           </ul>
