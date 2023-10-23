@@ -65,7 +65,7 @@ body{
 /* Header */
 .logo{
     display: block;
-    margin-bottom: -6px;
+    margin-bottom: -10px;
     position: relative;
 }
 
@@ -311,6 +311,8 @@ body{
 .search-link{
     background-color: #756157;
     color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
     text-decoration: none;
     text-align: center;
     width: 376px;
@@ -319,16 +321,7 @@ body{
     box-sizing: border-box;
     display: block;
     border-radius: 4px;
-}
-
-.search-button{
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 8px 0;
-    display: block;
-    box-sizing: border-box;
+    padding: 8px;
 }
 
 /*Subscription*/
@@ -629,6 +622,10 @@ body{
     color: rgba(51, 51, 51, 1);
 }
 
+.card-item-price{
+    text-align: right;
+}
+
 .card-button-detail{
     background-color: #756157;
     color: #FFFFFF;
@@ -648,6 +645,10 @@ body{
 
 .card-button-active{
     background-color: #7DB54F;
+}
+
+.stars-images{
+    padding: 10px 0;
 }
 
 .product-card-rating{
