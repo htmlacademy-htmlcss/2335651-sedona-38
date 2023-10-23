@@ -96,6 +96,25 @@ body{
     margin-left: auto;
 }
 
+.navigation-user .navigation-item:nth-child(1)
+.navigation-link{
+    background-image: url(../images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-user .navigation-item:nth-child(2)
+.navigation-link{
+    background-image: url(../images/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.navigation-icon{
+    width: 44px;
+}
+
 .navigation-link{
     font-weight: 700;
     font-size: 20px;
@@ -245,6 +264,24 @@ body{
     padding-top: 64px;
 }
 
+.services-item:nth-child(1){
+    background-image: url(../images/home.svg);
+    background-repeat: no-repeat;
+    background-position: center 81px;
+}
+
+.services-item:nth-child(2){
+    background-image: url(../images/food.svg);
+    background-repeat: no-repeat;
+    background-position: center 81px;
+}
+
+.services-item:nth-child(3){
+    background-image: url(../images/gift.svg);
+    background-repeat: no-repeat;
+    background-position: center 81px;
+}
+
 .services h2{
     max-width: 550px;
     margin: 0 auto;
@@ -282,6 +319,7 @@ body{
     font-weight: 700;
     margin: 0;
     margin-bottom: 30px;
+    margin-top: 183px;
 }
 
 .services-item p{
@@ -463,6 +501,9 @@ body{
     color: #FFFFFF;
     font-weight: 400;
     text-decoration: none;
+}
+
+.breadcrumbs-link-symbol::before{
 }
 
 .catalog-filter-group{
