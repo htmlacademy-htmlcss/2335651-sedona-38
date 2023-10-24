@@ -846,15 +846,15 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
-.card-button-active{
+.card-button-current{
     background-color: #7DB54F;
 }
 
-.card-button-active:hover{
+.card-button-current:hover{
     background-color: rgba(108, 158, 66, 1);
 }
 
-.card-button-active:focus{
+.card-button-current:focus{
     outline: none;
     background-color: rgba(108, 158, 66, 1);
 }
