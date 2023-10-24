@@ -129,6 +129,14 @@ body{
     border-radius: 4px;
 }
 
+.navigation-link:hover:not(.navigation-button){
+    text-decoration: underline;
+    text-decoration-color: rgba(117, 98, 87, 1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 19px;
+    text-underline-position: under;
+}
+
 .navigation-button{
     font-size: 16px;
     line-height: 20px;
@@ -147,6 +155,10 @@ body{
 .navigation-button:focus{
     outline: none;
     background-color: rgba(97, 80, 72, 1);
+}
+
+.navigation-button:active{
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /*Main*/
@@ -247,6 +259,17 @@ body{
     margin-bottom: 62px;
 }
 
+.advantages-title::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    width: 60px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: 57px;
+    margin-top: 30px;
+}
+
 .advantages-hero-block{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(130, 179, 211, 1);
@@ -262,6 +285,10 @@ body{
     width: 400px;
     padding-top: 102px;
     box-sizing: border-box;
+}
+
+.advantages-secondary-block h3::after{
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-center-block{
@@ -380,6 +407,9 @@ body{
     background-color: rgba(97, 80, 72, 1);
 }
 
+.search-link:active{
+    color: rgba(255, 255, 255, 0.3);
+}
 
 /*Subscription*/
 .index-subscription{
@@ -444,6 +474,10 @@ body{
     background-color: rgba(104, 162, 202, 1);
 }
 
+.subscription-button:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .subscription input{
     font-family: "PT Sans", sans-serif;
     background-color: rgba(242, 242, 242, 1);
@@ -497,6 +531,10 @@ body{
     color: rgba(117, 97, 87, 1);
 }
 
+.footer-contact-phone:active{
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-social-link:hover .footer-icon{
     fill: rgba(104, 162, 202, 1);
 }
@@ -504,6 +542,7 @@ body{
 .htmlacademy-link:hover .htmlacademy-icon{
     fill: rgba(117, 97, 87, 1);
 }
+
 
 /*Catalog.html*/
 .main-inner h1{
@@ -535,6 +574,7 @@ body{
     display: flex;
     margin: 0;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .breadcrumbs-link{
@@ -545,6 +585,19 @@ body{
     text-decoration: none;
 }
 
+.breadcrumbs-link:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link-symbol::before{
+    content: url(../images/breadcrumbs-arr.svg);
+    margin-left: 10px;
+}
+
 .catalog-filter{
     display: flex;
 }
@@ -552,6 +605,8 @@ body{
 .catalog-filter-group{
     border: none;
     margin: 0;
+    padding: 0;
+    margin-right: 70px;
 }
 
 .catalog-filter-list{
@@ -607,9 +662,14 @@ body{
 .filter-button:hover{
     background-color: rgba(104, 162, 202, 1);
 }
+
 .filter-button:focus{
     outline: none;
     background-color: rgba(104, 162, 202, 1);
+}
+
+.filter-button:active{
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-button-close{
@@ -655,12 +715,8 @@ body{
     border-color: rgba(0, 0, 0, 1);
 }
 
-.card-grid-toggle:focus{
-    outline: 2px solid rgba(104, 162, 202, 1);
-}
-
-.card-grid-toggle:last-child{
-    margin-right: 0;
+.card-grid-toggle:active{
+    border-color: rgba(0, 0, 0, 1);
 }
 
 .catalog-title{
@@ -766,6 +822,10 @@ body{
     background-color: rgba(97, 80, 72, 1);
 }
 
+.card-button-detail:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .card-button-favourites{
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -780,6 +840,10 @@ body{
 .card-button-favourites:focus{
     outline: none;
     background-color: rgba(104, 162, 202, 1);
+}
+
+.card-button-favourites:active{
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .card-button-active{
@@ -847,6 +911,10 @@ body{
 .pagination-current:focus:not(.pagination-current-active,.pagination-current-hidden){
     outline: none;
     background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-current:active:not(.pagination-current-active,.pagination-current-hidden){
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current-active{
