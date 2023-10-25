@@ -94,25 +94,58 @@ body{
 .navigation-user{
     max-width: 300px;
     margin-left: auto;
+    position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(1)
-.navigation-link{
+.navigation-search{
     background-image: url(../images/icon-search.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2)
-.navigation-link{
+.navigation-heart{
     background-image: url(../images/icon-heart.svg);
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 20px;
 }
 
+.navigation-heart::after{
+    content: "12";
+    width: 20px;
+    height: 20px;
+    background-color: rgba(125, 181, 79, 1);
+    position: absolute;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 10px;
+    line-height: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-weight: 400;
+    top: 11px;
+    left: 20px;;
+}
+
 .navigation-icon{
     min-width: 44px;
+}
+
+.navigation-item{
+    position: relative;
+}
+
+.navigation-item:active::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 32px);
+    background: rgba(117, 98, 87, 1);
+    bottom: -1px;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 .navigation-link{
@@ -125,16 +158,10 @@ body{
     display: block;
     box-sizing: border-box;
     height: 64px;
-    padding: 20px 16px;
+    display: flex;
+    align-items: center;
     border-radius: 4px;
-}
-
-.navigation-link:hover:not(.navigation-button){
-    text-decoration: underline;
-    text-decoration-color: rgba(117, 98, 87, 1);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 19px;
-    text-underline-position: under;
+    padding: 0 16px;
 }
 
 .navigation-button{
@@ -257,17 +284,17 @@ body{
     margin: 0 auto;
     max-width: 180px;
     margin-bottom: 62px;
+    position: relative;
 }
 
 .advantages-title::after{
     content: "";
     position: absolute;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    height: 2px;
     width: 60px;
-    box-sizing: border-box;
-    display: block;
-    margin-left: 57px;
-    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    left: 60px;
+    top: 86px;
 }
 
 .advantages-hero-block{
@@ -288,7 +315,7 @@ body{
 }
 
 .advantages-secondary-block h3::after{
-    border-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-center-block{
@@ -511,12 +538,12 @@ body{
     padding: 0;
 }
 
-.footer-social-link{
-    display: block;
-    box-sizing: border-box;
-    padding: 14px;
+.footer-social-item{
     width: 47px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-contact-phone{
@@ -535,14 +562,29 @@ body{
     color: rgba(117, 97, 87, 0.3);
 }
 
+.footer-social-link{
+    fill: rgba(131, 179, 211, 1);
+}
+
 .footer-social-link:hover .footer-icon{
     fill: rgba(104, 162, 202, 1);
+}
+
+.footer-social-link:active .footer-icon{
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+.htmlacademy-link{
+    fill: rgba(0, 0, 0, 1);
 }
 
 .htmlacademy-link:hover .htmlacademy-icon{
     fill: rgba(117, 97, 87, 1);
 }
 
+.htmlacademy-link:active .htmlacademy-icon{
+    fill: rgba(117, 97, 87, 0.3);
+}
 
 /*Catalog.html*/
 .main-inner h1{
@@ -584,6 +626,14 @@ body{
     font-weight: 400;
     text-decoration: none;
 }
+.breadcrumbs-item{
+    position: relative;
+    padding-left: 20px;
+}
+
+.breadcrumbs-item:first-child{
+    padding-left: 0;
+}
 
 .breadcrumbs-link:hover{
     color: rgba(255, 255, 255, 0.6);
@@ -593,9 +643,12 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-link-symbol::before{
+.breadcrumbs-symbol::after{
     content: url(../images/breadcrumbs-arr.svg);
-    margin-left: 10px;
+    width: 8px;
+    height: 11px;
+    position: absolute;
+    padding-left: 10px;
 }
 
 .catalog-filter{
