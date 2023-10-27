@@ -701,9 +701,20 @@ body{
     opacity: 0.6;
 }
 
-.control-input{
+.control{
+    position: relative;
+    display: block;
+    padding-left: 16px;
+}
+
+.control-mark{
+    position: absolute;
     width: 20px;
     height: 20px;
+    border: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    top: 2px;
+    cursor: pointer;
 }
 
 .catalog-filter-item:last-child{
@@ -775,6 +786,12 @@ body{
     color: rgba(0, 0, 0, 1);
     box-sizing: border-box;
     padding: 0 20px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button{
+    appearance: none;
+    margin: 0;
 }
 
 .range-bar{
