@@ -135,7 +135,7 @@ body{
     position: relative;
 }
 
-.navigation-item:active::after{
+.navigation-item:active::after:not(.navigation-button.navigation-icon){
     content: "";
     position: absolute;
     height: 2px;
@@ -216,10 +216,11 @@ body{
 
 /*Hero*/
 .hero{
-    background: url(../images/index-background.jpg);
+    background: url(../images/background-vector.svg),
+                url(../images/index-background.jpg);
     background-color:rgb(102, 164, 163);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
     background-position: center bottom;
     color:rgba(0, 0, 0, 1);
     min-height: 485px;
@@ -628,7 +629,7 @@ body{
 }
 .breadcrumbs-item{
     position: relative;
-    padding-left: 20px;
+    padding-left: 28px;
 }
 
 .breadcrumbs-item:first-child{
@@ -643,12 +644,23 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
+.breadcrumbs-icon{
+    fill: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-icon:hover{
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:active{
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+
 .breadcrumbs-symbol::after{
     content: url(../images/breadcrumbs-arr.svg);
-    width: 8px;
-    height: 11px;
     position: absolute;
-    padding-left: 10px;
+    transform: translateX(10px);
 }
 
 .catalog-filter{
@@ -768,6 +780,10 @@ body{
     border-color: rgba(0, 0, 0, 1);
 }
 
+.card-grid-toggle:focus{
+    border-color: rgba(104, 162, 202, 1);
+}
+
 .card-grid-toggle:active{
     border-color: rgba(0, 0, 0, 1);
 }
@@ -795,6 +811,11 @@ body{
     padding-left: 20px;
     box-sizing: border-box;
     margin-right: auto;
+    appearance: none;
+    background-image: url(../images/sorting-arr.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: calc(100% - 20px);
 }
 
 .select-control:hover{
