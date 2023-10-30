@@ -529,6 +529,10 @@ body{
     box-sizing: border-box;
 }
 
+.subscription input:focus-visible{
+    outline: none;
+}
+
 /*Footer*/
 .page-footer{
     width: 1060px;
@@ -751,7 +755,6 @@ body{
 .control{
     position: relative;
     display: block;
-    padding-left: 16px;
 }
 
 .control-mark{
@@ -762,6 +765,11 @@ body{
     background-color: rgba(255, 255, 255, 1);
     top: 2px;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.control-title{
+    padding-left: 36px;
 }
 
 .catalog-filter-item:last-child{
@@ -839,6 +847,10 @@ body{
     outline: 3px solid rgba(131, 179, 211, 1);
 }
 
+.range-input:focus-visible{
+    outline: none;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button{
     appearance: none;
@@ -859,6 +871,10 @@ body{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.range-toggle:active{
+    outline: 2px solid rgba(131, 179, 211, 1);
 }
 
 .range-toggle:focus{
