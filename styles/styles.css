@@ -665,6 +665,10 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
 .breadcrumbs-link:active{
     color: rgba(255, 255, 255, 0.3);
 }
@@ -720,6 +724,14 @@ body{
     color: #FFFFFF;
     font-weight: 400;
     margin-bottom: 16px;
+}
+
+.catalog-filter-item input{
+    cursor: pointer;
+}
+
+.catalog-filter-item input:focus{
+    outline-color: rgba(104, 162, 202, 1);
 }
 
 .catalog-filter-item:hover{
@@ -813,6 +825,10 @@ body{
     padding: 0 20px;
 }
 
+.range-input:focus{
+    outline: 3px solid rgba(131, 179, 211, 1);
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button{
     appearance: none;
@@ -833,6 +849,10 @@ body{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.range-toggle:focus{
+    outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .toggle-min{
@@ -899,7 +919,8 @@ body{
 }
 
 .card-grid-toggle:focus{
-    border-color: rgba(104, 162, 202, 1);
+    outline-color: rgba(104, 162, 202, 1);
+    border-color: rgba(229, 229, 229, 1);
 }
 
 .card-grid-toggle:active{
@@ -956,6 +977,10 @@ body{
     margin-bottom: 16px;
 }
 
+.card-link-image:focus{
+   outline-color: rgba(104, 162, 202, 1)
+}
+
 .card-link-title{
     font-size: 24px;
     line-height: 28px;
@@ -967,10 +992,15 @@ body{
     margin-bottom: 16px;
 }
 
+.card-link-title:focus{
+    outline-color: rgba(104, 162, 202, 1)
+ }
+
 .card-link-title h3{
     margin: 0;
     padding: 0;
 }
+
 
 .product-card-item{
     min-height: 438px;
@@ -1131,6 +1161,9 @@ body{
     background-color: rgba(255, 255, 255, 1);
 }
 
+.pagination-current-hidden:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
 
 /*Catalog-subscription*/
 .catalog-subscription{
