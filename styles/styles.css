@@ -69,6 +69,10 @@ body{
     position: relative;
 }
 
+.logo:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
 .page-header{
     display: flex;
     padding: 0 70px;
@@ -80,6 +84,11 @@ body{
     display: flex;
     margin: 0 auto;
 }
+
+.navigation-link:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
 .navigation-list{
     width: 430px;
     margin: 0;
@@ -538,6 +547,15 @@ body{
     padding: 0;
 }
 
+.footer-social-link{
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-link:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
 .footer-social-item{
     width: 47px;
     height: 40px;
@@ -556,6 +574,10 @@ body{
 
 .footer-contact-phone:hover{
     color: rgba(117, 97, 87, 1);
+}
+
+.footer-contact-phone:focus{
+    outline-color: rgba(104, 162, 202, 1);
 }
 
 .footer-contact-phone:active{
@@ -580,6 +602,10 @@ body{
 
 .htmlacademy-link:hover .htmlacademy-icon{
     fill: rgba(117, 97, 87, 1);
+}
+
+.htmlacademy-link:focus{
+    outline-color: rgba(104, 162, 202, 1);
 }
 
 .htmlacademy-link:active .htmlacademy-icon{
