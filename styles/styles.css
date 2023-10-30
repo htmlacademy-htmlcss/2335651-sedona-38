@@ -768,6 +768,18 @@ body{
     border-radius: 4px;
 }
 
+.control-input[type="checkbox"]:checked +
+.control-mark::after{
+    content: "";
+    position: absolute;
+    background: url(../images/filter-arr.svg);
+    width: 12px;
+    height: 10px;
+    background-repeat: no-repeat;
+    left: 4px;
+    top: 5px;
+}
+
 .control-title{
     padding-left: 36px;
 }
