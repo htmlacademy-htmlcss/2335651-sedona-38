@@ -105,20 +105,23 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="home-group" value="hotel" checked>
-                                Гостиница
+                                <input class="visually-hidden control-input" type="radio" name="home-group" value="hotel" checked>
+                                <span class="control-mark"></span>
+                                <span class="control-title">Гостиница</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="home-group" value="motel">
-                                Мотель
+                                <input class="visually-hidden control-input" type="radio" name="home-group" value="motel">
+                                <span class="control-mark"></span>
+                                <span class="control-title">Мотель</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="home-group" value="apartments">
-                                Апартаменты
+                                <input class="visually-hidden control-input" type="radio" name="home-group" value="apartments">
+                                <span class="control-mark"></span>
+                                <span class="control-title">Апартаменты</span>
                             </label>
                         </li>
                     </ul>
@@ -129,10 +132,10 @@
 
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label min-price">
-                    <input class="range-input" type="number" placeholder="от" value="0" name="min-price">
+                    <input class="range-input" type="number" value="0" name="min-price">от
                   </label>
                   <label class="catalog-filter-label max-price">
-                    <input class="range-input" type="number" placeholder="до" value="9000" name="max-price">
+                    <input class="range-input" type="number" value="9000" name="max-price">
                   </label>
                 </div>
 
@@ -166,7 +169,7 @@
                   <option value="popular">Сначала дорогое</option>
                   <option value="popular">Сначала популярное</option>
               </select>
-              <a href="#" class="card-grid-toggle card-toggle-current active">
+              <a class="card-grid-toggle card-toggle-current active">
                   <span class="visually-hidden">Показать карточки</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                     <g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
