@@ -99,7 +99,7 @@
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                                <input class="visually-hidden control-input" type="checkbox" name="wi-fi" disabled>
                                 <span class="control-mark"></span>
                                 <span class="control-title">Wi-Fi</span>
                             </label>
@@ -119,7 +119,7 @@
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="home-group" value="motel">
+                                <input class="visually-hidden control-input" type="radio" name="home-group" value="motel" >
                                 <span class="control-mark"></span>
                                 <span class="control-title">Мотель</span>
                             </label>
@@ -139,10 +139,12 @@
 
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label min-price">
-                    <input class="range-input" type="number" value="0" name="min-price">от
+                    <input class="range-input" type="number" placeholder="0" name="min-price">
+                    <span>от</span>
                   </label>
                   <label class="catalog-filter-label max-price">
-                    <input class="range-input" type="number" value="9000" name="max-price">до
+                    <input class="range-input" type="number" placeholder="9000" name="max-price">
+                    <span>до</span>
                   </label>
                 </div>
 

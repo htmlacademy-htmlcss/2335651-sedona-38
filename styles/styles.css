@@ -61,6 +61,10 @@ body{
     border-radius: 4px;
 }
 
+.button:disabled{
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+}
 /* Header */
 .logo{
     display: block;
@@ -82,6 +86,14 @@ body{
     width: 1060px;
     display: flex;
     margin: 0 auto;
+}
+
+.navigation-link:hover{
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.navigation-link:active{
+    color: rgba(0, 0, 0, 0.3);;
 }
 
 .navigation-link:focus{
@@ -108,10 +120,20 @@ body{
 .navigation-icon{
     min-width: 44px;
     position: relative;
+    fill: rgba(0, 0, 0, 1);
+}
+
+.navigation-icon:hover{
+    fill: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-icon:active{
+    fill: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-item{
     position: relative;
+    padding: 0 16px;
 }
 
 .navigation-current{
@@ -152,11 +174,8 @@ body{
     text-align: center;
     display: block;
     box-sizing: border-box;
-    height: 64px;
     display: flex;
     align-items: center;
-    border-radius: 4px;
-    padding: 0 16px;
 }
 
 .navigation-button{
@@ -166,13 +185,15 @@ body{
     color: #FFFFFF;
     display: block;
     min-width: 160px;
-    height: 36px;
+    min-height: 36px;
     padding: 8px;
-    margin-left: 17px
+    margin: 14px 17px 14px 17px;
+    border-radius: 4px;
 }
 
 .navigation-button:hover{
     background-color: rgba(97, 80, 72, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .navigation-button:focus{
@@ -300,18 +321,17 @@ body{
     text-transform: uppercase;
     margin: 0 auto;
     max-width: 180px;
-    margin-bottom: 62px;
+    margin-bottom: 30px;
     position: relative;
 }
 
 .advantages-title::after{
     content: "";
-    position: absolute;
+    display: block;
     height: 2px;
     width: 60px;
     background: rgba(255, 255, 255, 0.3);
-    left: 60px;
-    top: 86px;
+    margin: 30px auto 0;
 }
 
 .advantages-hero-block{
@@ -725,6 +745,7 @@ body{
 
 .catalog-filter{
     display: flex;
+    padding-bottom: 70px;
 }
 
 .catalog-filter-group{
@@ -757,16 +778,22 @@ body{
     margin-bottom: 16px;
 }
 
-.catalog-filter-item input{
-    cursor: pointer;
-}
-
-.catalog-filter-item input:focus{
-    outline-color: rgba(104, 162, 202, 1);
-}
-
-.catalog-filter-item:hover{
+.control:hover{
     opacity: 0.6;
+}
+
+.control:active{
+    opacity: 0.3;
+}
+
+.control-input:disabled ~ .control-mark:disabled{
+    background-color: #000000;
+}
+
+.control-input:focus ~ .control-mark:focus,
+.control-input:focus ~ .control-mark[type="radio"]:focus{
+    outline:3px solid rgba(131, 179, 211, 1);
+    background-color: #000000;
 }
 
 .control{
@@ -815,6 +842,7 @@ body{
 
 .control-title{
     padding-left: 36px;
+    cursor: pointer;
 }
 
 .catalog-filter-item:last-child{
@@ -864,6 +892,10 @@ body{
     outline: 3px solid rgba(131, 179, 211, 1);
 }
 
+.filter-button-close:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .range-wrapper-inputs{
     display: flex;
     gap: 2px;
@@ -888,11 +920,14 @@ body{
     height: 20px;
     background-color: transparent;
     border: none;
-    color: rgba(0, 0, 0, 1);
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+}
+
+.range-input::placeholder{
+    color: rgba(0, 0, 0, 1);
 }
 
 .min-price{
@@ -1038,6 +1073,16 @@ body{
 
 .select-control:hover{
     border-color: rgba(104, 162, 202, 1);
+}
+
+.select-control:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
+.select-control:disabled{
+    opacity: 0.3;
+    border-color: rgba(0, 0, 0, 1);
+    cursor: default;
 }
 
 /*Cards*/
