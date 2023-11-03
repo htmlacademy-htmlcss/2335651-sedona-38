@@ -183,20 +183,34 @@
           <form class="date-search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="field-date" for="arrival-date">Дата Заезда:</label>
-              <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-                <svg class="date-form-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15">
-                  <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
-                </svg>
+                <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
             </p>
               <p class="date-message date-error-message">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="field-date" for="departure-date">Дата Выезда:</label>
-              <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023">
-              <svg class="date-form-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="15">
-                <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
-              </svg>
+                <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023">
             </p>
               <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="number-people">
+              <label class="field-number-people field-adult-number" for="adult-number">Взрослые:</label>
+              <input class="number-people-input" type="number" placeholder="2" name="adult-number">
+
+              <span class="form-label">
+                <label class="field-number-people field-child-number" for="child-number">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12">
+                      <path fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </span>
+              <input class="number-people-input" type="number" placeholder="2" name="child-number">
+            </div>
+
             <button class="button button-date-search" type="submit">Найти</button>
           </form>
         </section>

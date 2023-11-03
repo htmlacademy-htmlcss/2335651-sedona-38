@@ -777,9 +777,13 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    padding-left: 20px;
+    padding: 12px 20px;
     box-sizing: border-box;
     border-radius: 4px;
+    background-image: url(../images/calendar-vector.svg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 14px;
 }
 
 .date-form-field::placeholder{
@@ -792,14 +796,6 @@ body{
     right: 22px;
     top: 16px;
     cursor: pointer;
-}
-
-.date-form-icon:hover{
-    fill: rgba(0, 0, 0, 0.2)
-}
-
-.date-form-icon:active{
-    fill: rgba(0, 0, 0, 0.1)
 }
 
 .field-date{
@@ -825,6 +821,89 @@ body{
     color: rgba(255, 87, 87, 1);
 }
 
+.number-people{
+    margin-bottom: 48px;
+}
+
+.field-number-people{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.number-people-input{
+    margin-left: 46px;
+    width: 110px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: rgba(242, 242, 242, 1);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+}
+
+.number-people-input::placeholder{
+    color: rgba(0, 0, 0, 1);
+}
+
+.field-child-number{
+    margin-left: 88px;
+    position: relative;
+}
+
+.tooltip{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.tooltip-toggle{
+    width: 26px;
+    height: 26px;
+    background-color: rgba(131, 179, 211, 1);
+    border: none;
+    border-radius: 50%;
+    fill: rgba(255, 255, 255, 1);
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.tooltip-text{
+    background-color: rgba(51, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    width: 256px;
+    min-height: 143px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    transform: translateX(-50%);
+    margin-left: 13px;
+}
+
+.tooltip-text::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(51, 51, 51, 1);
+    transform: rotate(45deg);
+    transform: translateX(50%);
+    transform: rotate(45deg);
+    top: -5px;
+    left: 123px;
+}
+
 .button-date-search{
     background-color: rgba(131, 179, 211, 1);
     width: 100%;
@@ -846,6 +925,7 @@ body{
     background-color: rgba(104, 162, 202, 1);
     color: rgba(255, 255, 255, 0.3);
 }
+
 
 /*Catalog.html*/
 .main-inner h1{
