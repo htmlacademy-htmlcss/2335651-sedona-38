@@ -55,16 +55,48 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
     border: none;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
 }
 
+.button-blue:hover{
+    background-color: rgba(104, 162, 202, 1);
+}
+    
+.button-blue:focus{
+    outline: none;
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-blue:active{
+    background-color: rgba(104, 162, 202, 1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
 .button:disabled{
     background-color: rgba(229, 229, 229, 1);
     color: rgba(255, 255, 255, 1);
 }
+
+.button-blue:hover{
+    background-color: rgba(104, 162, 202, 1);
+}
+    
+.button-blue:focus{
+    outline: none;
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-blue:active{
+    background-color: rgba(104, 162, 202, 1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* Header */
 .logo{
     display: block;
@@ -194,15 +226,9 @@ body{
 }
 
 .navigation-button{
-    font-size: 16px;
-    line-height: 20px;
-    background-color: #756157;
-    color: #FFFFFF;
     display: flex;
     width: 160px;
     min-height: 36px;
-    border-radius: 4px;
-    text-decoration: none;
     margin-left: 20px;
     align-items: center;
     justify-content: center;
@@ -210,11 +236,11 @@ body{
     box-sizing: border-box;
     margin-top: 14px;
     margin-bottom: 14px;
+    background-color: rgba(117, 97, 87, 1);
 }
 
 .navigation-button:hover{
     background-color: rgba(97, 80, 72, 1);
-    color: rgba(255, 255, 255, 1);
 }
 
 .navigation-button:focus{
@@ -471,17 +497,13 @@ body{
 
 .search-link{
     background-color: #756157;
-    color: #FFFFFF;
     font-size: 20px;
     line-height: 36px;
-    text-decoration: none;
-    text-align: center;
     width: 376px;
     height: 52px;
     margin-bottom: 96px;
     box-sizing: border-box;
     display: block;
-    border-radius: 4px;
     padding: 8px;
 }
 
@@ -543,14 +565,11 @@ body{
 }
 
 .subscription-button{
-    background-color: #82B3D3;
-    color: #FFFFFF;
     font-size: 20px;
     line-height: 36px;
     width: 232px;
-    margin: 0;
-    font-family: "PT Sans";
     border-radius: 0px 4px 4px 0px;
+    background-color: rgba(130, 179, 211, 1);
 }
 
 .subscription-button:hover{
@@ -685,6 +704,10 @@ body{
     background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close{
+    display: none;
+}
+
 .modal{
     position: relative;
     margin: auto;
@@ -695,6 +718,7 @@ body{
 .modal-auth{
     width: 717px;
     border-radius: 30px;
+    box-sizing: border-box;
 }
 
 .modal-button-close{
@@ -719,6 +743,50 @@ body{
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    margin-bottom: 64px;
+}
+
+.field-group{
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-form-field{
+    width: 440px;
+    height: 48px;
+    border: none;
+    background-color: rgba(242, 242, 242, 1);
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+}
+
+.auth-form-field::placeholder{
+    color: rgba(0, 0, 0, 1);
+}
+
+.field-date{
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+}
+
+.button-auth{
+    background-color: rgba(131, 179, 211, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 /*Catalog.html*/
@@ -925,11 +993,10 @@ body{
 }
 
 .filter-button{
-    background-color: #82B3D3;
-    color: #FFFFFF;
     width: 191px;
     height: 36px;
     margin-bottom: 32px;
+    background-color: rgba(130, 179, 211, 1);
 }
 
 .filter-button:hover{
@@ -945,11 +1012,20 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
+
 .filter-button-close{
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    text-transform: uppercase;
     color: #FFFFFF;
     width: 191px;
     height: 36px;
     background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .filter-button-close:hover{
@@ -1241,10 +1317,9 @@ body{
 }
 
 .card-button-favourites{
-    background-color: #82B3D3;
-    color: #FFFFFF;
     width: 140px;
     height: 36px;
+    background-color: rgba(130, 179, 211, 1);
 }
 
 .card-button-favourites:hover{
@@ -1261,7 +1336,7 @@ body{
 }
 
 .card-button-current{
-    background-color: #7DB54F;
+    background-color:rgba(125, 181, 79, 1);
 }
 
 .card-button-current:hover{

@@ -49,8 +49,8 @@
               </li>
             </div>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-button" href="#">
-                <span class="button">
+              <a class="navigation-user-link button navigation-button" href="#">
+                <span>
                   Хочу сюда!
                 </span>
               </a>
@@ -173,7 +173,7 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-button-close">
           <span class="visually-hidden">Закрыть</span>
@@ -182,9 +182,14 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label class="field-arrival-date" for="auth-arrival-date">Дата заезда</label>
-              <input class="auth-form-field" type="text" id="auth-arrival-date"
+              <label class="field-date" for="auth-arrival-date">Дата Заезда:</label>
+              <input class="auth-form-field" type="text" id="auth-arrival-date" name="auth-arrival-date" placeholder="27 апреля 2020">
             </p>
+            <p class="field-group">
+              <label class="field-date" for="auth-departure-date">Дата Выезда:</label>
+              <input class="auth-form-field" type="text" id="auth-departure-date" name="auth-departure-date" placeholder="1 сентября 2023">
+            </p>
+            <button class="button button-auth" type="submit">Найти</button>
           </form>
         </section>
       </div>
