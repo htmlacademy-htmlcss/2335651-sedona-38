@@ -120,15 +120,19 @@ body{
     margin: 0 auto;
 }
 
-.navigation-link:hover{
+.navigation-link:not(.navigation-current):hover{
     color:rgba(0, 0, 0, 0.6);
 }
 
-.navigation-link:active{
+.navigation-link:not(.navigation-current)active{
     color: rgba(0, 0, 0, 0.3);;
 }
 
 .navigation-link:focus{
+    outline-color: rgba(104, 162, 202, 1);
+}
+
+.navigation-user-link:focus{
     outline-color: rgba(104, 162, 202, 1);
 }
 
@@ -715,7 +719,7 @@ body{
     padding: 64px 70px;
 }
 
-.modal-auth{
+.modal-date-search{
     width: 717px;
     border-radius: 30px;
     box-sizing: border-box;
@@ -724,7 +728,6 @@ body{
 .modal-button-close{
     position: absolute;
     padding: 0;
-    top: 64px;
     right: 52px;
     width: 52px;
     height: 52px;
@@ -737,6 +740,18 @@ body{
     cursor: pointer;
 }
 
+.modal-button-close:hover{
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-button-close:focus{
+    outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-button-close:active{
+    outline: none;
+}
+
 .modal-title{
     font-size: 30px;
     line-height: 36px;
@@ -747,12 +762,13 @@ body{
 }
 
 .field-group{
-    margin-bottom: 48px;
+    margin-bottom: 4px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.auth-form-field{
+.date-form-field{
     width: 440px;
     height: 48px;
     border: none;
@@ -763,11 +779,27 @@ body{
     line-height: 24px;
     padding-left: 20px;
     box-sizing: border-box;
-
+    border-radius: 4px;
 }
 
-.auth-form-field::placeholder{
+.date-form-field::placeholder{
     color: rgba(0, 0, 0, 1);
+}
+
+.date-form-icon{
+    fill: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.date-form-icon:hover{
+    fill: rgba(0, 0, 0, 0.2)
+}
+
+.date-form-icon:active{
+    fill: rgba(0, 0, 0, 0.1)
 }
 
 .field-date{
@@ -780,13 +812,39 @@ body{
     align-items: center;
 }
 
-.button-auth{
+.date-message{
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 23px;
+    margin-left: 157px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.date-error-message{
+    color: rgba(255, 87, 87, 1);
+}
+
+.button-date-search{
     background-color: rgba(131, 179, 211, 1);
-    color: rgba(255, 255, 255, 1);
     width: 100%;
     height: 60px;
     font-size: 20px;
     line-height: 24px;
+}
+
+.button-date-search:hover{
+    background-color: rgba(104, 162, 202, 1);
+}
+    
+.button-date-search:focus{
+    outline: none;
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.button-date-search:active{
+    background-color: rgba(104, 162, 202, 1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /*Catalog.html*/
@@ -926,9 +984,8 @@ body{
     background-color: #000000;
 }
 
-.control-input:focus ~ .control-mark:focus,
-.control-input:focus ~ .control-mark[type="radio"]:focus{
-    outline:3px solid rgba(131, 179, 211, 1);
+.control-input:focus ~ .control-mark:focus{
+    outline: 3px solid rgba(131, 179, 211, 1);
     background-color: #000000;
 }
 
