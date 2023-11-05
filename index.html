@@ -173,7 +173,7 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-date-search">
         <button class="modal-button-close">
           <span class="visually-hidden">Закрыть</span>
@@ -195,15 +195,15 @@
               <label class="field-number-people field-adult-number" for="adult-number">Взрослые:</label>
               <input class="number-people-input" type="number" placeholder="2" name="adult-number">
 
-              <span class="form-label">
+              <span class="form-label form-label-icon">
                 <label class="field-number-people field-child-number" for="child-number">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12">
                       <path fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
                     </svg>
                   </button>
-                  <span class="tooltip-text">
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>

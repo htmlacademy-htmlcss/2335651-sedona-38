@@ -889,6 +889,17 @@ body{
     position: relative;
     transform: translateX(-50%);
     margin-left: 13px;
+    display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text{
+    display: block;
+}
+
+.form-label-icon{
+    position:relative;
+    padding-right: 16px;
 }
 
 .tooltip-text::after{
