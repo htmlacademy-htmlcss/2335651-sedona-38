@@ -1063,21 +1063,28 @@ body{
     margin-bottom: 16px;
 }
 
-.control:hover{
+.control-input:hover ~ .control-mark,
+.control-input:hover ~ .control-mark-radio,
+.control-input:hover ~ .control-title{
     opacity: 0.6;
 }
 
-.control:active{
+.control-input:active ~ .control-mark,
+.control-input:active ~ .control-mark-radio,
+.control-input:active ~ .control-title{
     opacity: 0.3;
 }
 
-.control-input:disabled ~ .control-mark:disabled{
-    background-color: #000000;
+.control-input:disabled ~ .control-mark,
+.control-input:disabled ~ .control-mark-radio,
+.control-input:disabled ~ .control-title{
+    opacity: 0.3;
+    cursor: default;
 }
 
-.control-input:focus ~ .control-mark:focus{
+.control-input:focus ~ .control-mark,
+.control-input:focus ~ .control-mark-radio{
     outline: 3px solid rgba(131, 179, 211, 1);
-    background-color: #000000;
 }
 
 .control{
@@ -1085,7 +1092,8 @@ body{
     display: block;
 }
 
-.control-mark{
+.control-mark,
+.control-mark-radio{
     position: absolute;
     width: 20px;
     height: 20px;
@@ -1108,12 +1116,12 @@ body{
     top: 5px;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input + .control-mark-radio{
     border-radius: 50%;
-  }
+}
   
-.control-input[type="radio"]:checked +
-.control-mark::after{
+.control-input:checked +
+.control-mark-radio::after{
     content: "";
     position: absolute;
     width: 10px;
