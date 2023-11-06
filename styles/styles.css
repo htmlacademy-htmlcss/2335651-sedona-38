@@ -191,7 +191,7 @@ body{
 }
 
 .navigation-current::after{
-    content: '';
+    content:'';
     position: absolute;
     height: 2px;
     width: calc(100% - 32px);
@@ -202,7 +202,7 @@ body{
 }
 
 .navigation-item:active::after{
-    content: '';
+    content:'';
     position: absolute;
     height: 2px;
     width: calc(100% - 32px);
@@ -398,7 +398,7 @@ body{
     background-color: rgba(131, 179, 211, 0.12);
     color: rgba(51, 51, 51, 1);
     width: 400px;
-    padding-top: 102px;
+    padding-top: 112px;
     box-sizing: border-box;
 }
 
@@ -889,7 +889,8 @@ body{
     fill: rgba(117, 97, 87, 0.3);
 }
 
-.button-number-people:hover ~ .button-minus:hover{
+.button-minus:hover,
+.button-plus:hover{
     fill: rgba(0, 0, 0, 1);
 }   
 
@@ -986,6 +987,7 @@ body{
     height: 60px;
     font-size: 20px;
     line-height: 24px;
+    border-radius: 10px;
 }
 
 .button-date-search:hover{
@@ -1153,7 +1155,7 @@ body{
 }
 
 .control{
-    position: relativ;;
+    position: relative;
     display: block;
 }
 
