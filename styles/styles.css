@@ -879,7 +879,19 @@ body{
     cursor: pointer;
     border-radius: 4px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.button-minus,
+.button-plus{
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.button-number-people:hover ~ .button-minus:hover{
+    fill: rgba(0, 0, 0, 1);
+}   
 
 .field-number-child{
     display:flex;
