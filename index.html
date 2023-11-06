@@ -173,7 +173,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-date-search">
         <button class="modal-button-close">
           <span class="visually-hidden">Закрыть</span>
@@ -183,32 +183,52 @@
           <form class="date-search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="field-date" for="arrival-date">Дата Заезда:</label>
-                <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+                <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
             </p>
               <p class="date-message date-error-message">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="field-date" for="departure-date">Дата Выезда:</label>
-                <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023">
+                <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
             </p>
               <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="number-people">
-              <label class="field-number-people field-adult-number" for="adult-number">Взрослые:</label>
-              <input class="number-people-input" type="number" placeholder="2" name="adult-number">
-
-              <span class="form-label form-label-icon">
-                <label class="field-number-people field-child-number" for="child-number">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12">
-                      <path fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
-                    </svg>
+              <div class="number-people-adult">
+                <label class="label-number-people" for="adult-number">Взрослые:</label>
+                <div class="field-number-adult">
+                  <button class="button-number-people button-reduce" type="button">
+                    <span class="visually-hidden">Убавить</span>
                   </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  <input class="number-people-input" type="number" placeholder="2" name="adult-number">
+                  <button class="button-number-people button-add" type="button">
+                    <span class="visually-hidden">Добавить</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="number-people-child">
+                <span class="form-label form-label-icon">
+                  <label class="label-number-people" for="child-number">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12">
+                        <path fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
                   </span>
                 </span>
-              </span>
-              <input class="number-people-input" type="number" placeholder="2" name="child-number">
+                  <div class="field-number-child">
+                    <button class="button-number-people button-reduce" type="button">
+                      <span class="visually-hidden">Убавить</span>
+                    </button>
+                  <input class="number-people-input" type="number" placeholder="2" name="child-number">
+                    <button class="button-number-people button-add" type="button">
+                      <span class="visually-hidden">Добавить</span>
+                    </button>
+                </div>
+              </div>
             </div>
 
             <button class="button button-date-search" type="submit">Найти</button>

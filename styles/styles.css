@@ -1,16 +1,16 @@
 @font-face {
-    font-family: "PT Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    src: url('../fonts/ptsans-400.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    src: url('../fonts/ptsans-700.woff2') format('woff2');
     font-display: swap;
 }
 html{
@@ -18,7 +18,7 @@ html{
 }
 body{
     height: 100%;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: rgba(0, 0, 0, 1);
@@ -49,7 +49,7 @@ body{
 
 /*Buttons*/
 .button{
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -191,7 +191,7 @@ body{
 }
 
 .navigation-current::after{
-    content: "";
+    content: '';
     position: absolute;
     height: 2px;
     width: calc(100% - 32px);
@@ -202,7 +202,7 @@ body{
 }
 
 .navigation-item:active::after{
-    content: "";
+    content: '';
     position: absolute;
     height: 2px;
     width: calc(100% - 32px);
@@ -377,7 +377,7 @@ body{
 }
 
 .advantages-title::after{
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     width: 60px;
@@ -590,7 +590,7 @@ body{
 }
 
 .subscription input{
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     background-color: rgba(242, 242, 242, 1);
     border: none;
     font-weight: 400;
@@ -787,8 +787,18 @@ body{
 }
 
 .date-form-field::placeholder{
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.6);
 }
+
+.date-form-field:hover,
+.number-people-input:hover{
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.date-form-field:focus{
+    outline: 3px solid rgba(131, 179, 211, 1);
+}
+
 
 .date-form-icon{
     fill: rgba(0, 0, 0, 0.3);
@@ -822,41 +832,75 @@ body{
 }
 
 .number-people{
+    display: flex;
+    gap: 88px;
     margin-bottom: 48px;
 }
 
-.field-number-people{
+.number-people-adult,
+.number-people-child{
+    display: flex;
+    align-items: center;
+    width: 247px;
+    min-height: 48px;
+}
+
+.label-number-people{
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin: 0;
+}
+
+.field-number-adult{
+    display:flex;
+    background-color: rgba(242, 242, 242, 1);
+    min-width: 110px;
+    margin-left: 48px;
+    border-radius: 4px;
 }
 
 .number-people-input{
-    margin-left: 46px;
-    width: 110px;
+    width: 31px;
     height: 48px;
-    border-radius: 4px;
-    background-color: rgba(242, 242, 242, 1);
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
     border: none;
+    background-color: transparent;
+}
+
+.button-number-people{
+    width: 40px;
+    border: none;
+    background-color: rgba(242, 242, 242, 1);
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+}
+
+.field-number-child{
+    display:flex;
+    background-color: rgba(242, 242, 242, 1);
+    min-width: 110px;
+    margin-left: 80px;
+    border-radius: 4px;
 }
 
 .number-people-input::placeholder{
     color: rgba(0, 0, 0, 1);
 }
 
-.field-child-number{
-    margin-left: 88px;
-    position: relative;
+.number-people-input::-webkit-outer-spin-button,
+.number-people-input::-webkit-inner-spin-button{
+    appearance: none;
+    margin: 0;
 }
 
 .tooltip{
     position: absolute;
-    margin-top: 11px;
     margin-left: 10px;
     width: 26px;
     height: 26px;
@@ -873,6 +917,16 @@ body{
     box-sizing: border-box;
     margin: 0;
     margin-bottom: 15px;
+}
+
+.tooltip-toggle:hover,
+.tooltip-toggle:focus{
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.tooltip-toggle:active{
+    background-color: rgba(104, 162, 202, 1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .tooltip-text{
@@ -899,11 +953,10 @@ body{
 
 .form-label-icon{
     position:relative;
-    padding-right: 16px;
 }
 
 .tooltip-text::after{
-    content: "";
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
@@ -1088,7 +1141,7 @@ body{
 }
 
 .control{
-    position: relative;
+    position: relativ;;
     display: block;
 }
 
@@ -1104,9 +1157,9 @@ body{
     border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked +
+.control-input[type='checkbox']:checked +
 .control-mark::after{
-    content: "";
+    content: '';
     position: absolute;
     background: url(../images/filter-arr.svg);
     width: 12px;
@@ -1122,7 +1175,7 @@ body{
   
 .control-input:checked +
 .control-mark-radio::after{
-    content: "";
+    content: '';
     position: absolute;
     width: 10px;
     height: 10px;
@@ -1350,7 +1403,7 @@ body{
 }
 
 .select-control{
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
