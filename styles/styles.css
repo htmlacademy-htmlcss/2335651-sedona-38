@@ -587,6 +587,12 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
+.subscription-button:disabled{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(229, 229, 229, 1);
+    cursor: default;
+}
+
 .subscription input{
     font-family: 'PT Sans', sans-serif;
     background-color: rgba(242, 242, 242, 1);
@@ -702,7 +708,7 @@ body{
 
 .modal-container-close{
     display: none;
-}
+} 
 
 .modal{
     position: relative;
@@ -771,6 +777,7 @@ body{
     font-size: 18px;
     line-height: 24px;
     padding: 12px 20px;
+    padding-right: 50px;
     box-sizing: border-box;
     border-radius: 4px;
     background-image: url(../images/calendar-vector.svg);
@@ -992,6 +999,12 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
+.button-date-search:disabled{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(229, 229, 229, 1);
+    cursor: default;
+}
+
 /*Catalog.html*/
 .main-inner h1{
     font-size: 60px;
@@ -1078,7 +1091,7 @@ body{
 }
 
 
-.breadcrumbs-symbol::after{
+.breadcrumbs-link::after:not(.breadcrumbs-item:last-child){
     content: url(../images/breadcrumbs-arr.svg);
     position: absolute;
     transform: translateX(10px);
@@ -1225,6 +1238,11 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
+.filter-button:disabled{
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: default;
+}
 
 .filter-button-close{
     font-family: 'PT Sans';
@@ -1251,6 +1269,11 @@ body{
 
 .filter-button-close:active{
     color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button-close:disabled{
+    color: rgba(255, 255, 255, 0.1);
+    cursor: default;
 }
 
 .range-wrapper-inputs{
