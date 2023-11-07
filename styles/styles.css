@@ -344,6 +344,7 @@ body{
     max-width: 240px;
     margin: 0 auto;
 }
+
 .advantages-content{
     padding-top: 102px;
     padding-bottom: 102px;
@@ -383,6 +384,7 @@ body{
     color: rgba(51, 51, 51, 1);
     width: 400px;
     padding-top: 112px;
+    padding-bottom: 102px;
     box-sizing: border-box;
 }
 
@@ -431,6 +433,7 @@ body{
 .services-list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -488,7 +491,7 @@ body{
     font-size: 20px;
     line-height: 36px;
     width: 376px;
-    height: 52px;
+    min-height: 52px;
     margin-bottom: 96px;
     box-sizing: border-box;
     display: block;
@@ -557,7 +560,7 @@ body{
 .subscription-button{
     font-size: 20px;
     line-height: 36px;
-    width: 232px;
+    min-width: 232px;
     border-radius: 0px 4px 4px 0px;
     background-color: rgba(130, 179, 211, 1);
 }
