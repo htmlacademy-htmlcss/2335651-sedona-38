@@ -191,18 +191,6 @@ body{
     transform: translate(-50%);
 }
 
-.navigation-item:active::after{
-    content:'';
-    position: absolute;
-    height: 2px;
-    width: calc(100% - 32px);
-    background: rgba(117, 98, 87, 1);
-    bottom: -1px;
-    left: 50%;
-    transform: translate(-50%);
-
-}
-
 .navigation-link{
     font-weight: 700;
     font-size: 20px;
@@ -597,10 +585,10 @@ body{
     font-family: 'PT Sans', sans-serif;
     background-color: rgba(242, 242, 242, 1);
     border: none;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 1);
     width: 452px;
     margin: 0;
     border-radius: 4px 0px 0px 4px;
@@ -611,6 +599,12 @@ body{
 .subscription input:focus-visible{
     outline: none;
 }
+
+.subscription input[type="text"]::-moz-placeholder {color: rgba(0, 0, 0, 0.6); font-weight: 400;}
+.subscription input[type="text"]::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.6); font-weight: 400;}
+.subscription input[type="text"]:-ms-input-placeholder { color: rgba(0, 0, 0, 0.6); font-weight: 400;}
+.subscription input[type="text"]::-ms-input-placeholder { color: rgba(0, 0, 0, 0.6); font-weight: 400;}
+.subscription input[type="text"]::placeholder { color: rgba(0, 0, 0, 0.6); font-weight: 400;}
 
 /*Footer*/
 .page-footer{
@@ -786,9 +780,11 @@ body{
     background-position-y: 14px;
 }
 
-.date-form-field::placeholder{
-    color: rgba(0, 0, 0, 0.6);
-}
+.date-form-field[type="text"]::-moz-placeholder {color: rgba(0, 0, 0, 0.6);}
+.date-form-field[type="text"]::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.6);}
+.date-form-field[type="text"]:-ms-input-placeholder { color: rgba(0, 0, 0, 0.6);}
+.date-form-field[type="text"]::-ms-input-placeholder { color: rgba(0, 0, 0, 0.6);}
+.date-form-field[type="text"]::placeholder { color: rgba(0, 0, 0, 0.6);}
 
 .date-form-field:hover,
 .number-people-input:hover{
@@ -897,9 +893,11 @@ body{
     border-radius: 4px;
 }
 
-.number-people-input::placeholder{
-    color: rgba(0, 0, 0, 1);
-}
+.number-people-input[type="number"]::-moz-placeholder {color: rgba(0, 0, 0, 1);}
+.number-people-input[type="number"]::-webkit-input-placeholder { color: rgba(0, 0, 0, 1);}
+.number-people-input[type="number"]:-ms-input-placeholder { color: rgba(0, 0, 0, 1);}
+.number-people-input[type="number"]::-ms-input-placeholder { color: rgba(0, 0, 0, 1);}
+.number-people-input[type="number"]::placeholder { color: rgba(0, 0, 0, 1);}
 
 .number-people-input::-webkit-outer-spin-button,
 .number-people-input::-webkit-inner-spin-button{
@@ -1314,9 +1312,11 @@ body{
     bottom: 12px;
 }
 
-.range-input::placeholder{
-    color: rgba(0, 0, 0, 1);
-}
+.range-input[type="number"]::-moz-placeholder {color: rgba(0, 0, 0, 1);}
+.range-input[type="number"]::-webkit-input-placeholder { color:rgba(0, 0, 0, 1);}
+.range-input[type="number"]:-ms-input-placeholder { color: rgba(0, 0, 0, 1);}
+.range-input[type="number"]::-ms-input-placeholder { color: rgba(0, 0, 0, 1);}
+.range-input[type="number"]::placeholder { color: rgba(0, 0, 0, 1);}
 
 .range-input:hover{
     background-color: rgba(230, 230, 230, 1);
