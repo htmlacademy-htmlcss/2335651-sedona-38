@@ -707,9 +707,9 @@ body{
     background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close{
+/* .modal-container-close{
     display: none;
-}
+} */
 
 .modal{
     position: relative;
@@ -832,7 +832,8 @@ body{
 
 .number-people{
     display: flex;
-    gap: 88px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 48px;
 }
 
@@ -986,7 +987,7 @@ body{
 .button-date-search{
     background-color: rgba(131, 179, 211, 1);
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     font-size: 20px;
     line-height: 24px;
     border-radius: 10px;
