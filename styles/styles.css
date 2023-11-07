@@ -143,12 +143,13 @@ body{
     margin: 0;
     align-items: center;
     margin-left: auto;
+    flex-wrap: wrap;
 }
 
 .user-icon-list{
     display: flex;
-    max-width: 200px;
-    flex-wrap: wrap;
+    margin-left: auto;
+    max-width: 300px;
 }
 
 .navigation-icon{
