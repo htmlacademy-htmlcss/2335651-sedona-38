@@ -690,6 +690,10 @@ body{
 }
 
 /*Modal-conteiner*/
+/* .lock{
+    overflow: hidden;
+} */
+
 .modal-container{
     position: fixed;
     top: 0;
@@ -702,7 +706,7 @@ body{
 
 .modal-container-close{
     display: none;
-} 
+}
 
 .modal{
     position: relative;
@@ -715,6 +719,7 @@ body{
     width: 717px;
     border-radius: 30px;
     box-sizing: border-box;
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-button-close{
@@ -950,6 +955,7 @@ body{
     transform: translateX(-50%);
     margin-left: 13px;
     display: none;
+    box-shadow: 0 15 30 0 rgba(0, 0, 0, 0.3);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
