@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -6,16 +6,18 @@
     font-display: swap;
 }
 
-@font-face {
+@font-face{
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/ptsans-700.woff2') format('woff2');
     font-display: swap;
 }
+
 html{
     height: 100%;
 }
+
 body{
     height: 100%;
     font-family: 'PT Sans', sans-serif;
@@ -26,7 +28,7 @@ body{
     margin: 0;
 }
 
-.page-container {
+.page-container{
     background-color: rgba(255, 255, 255, 1);
     width: 1200px;
     margin: 0 auto;
@@ -76,7 +78,6 @@ body{
     background-color: rgba(104, 162, 202, 1);
     color: rgba(255, 255, 255, 0.3);
 }
-
 
 .button:disabled{
     background-color: rgba(229, 229, 229, 1);
@@ -145,9 +146,9 @@ body{
 }
 
 .user-icon-list{
-        display: flex;
-        max-width: 200px;
-        flex-wrap: wrap;
+    display: flex;
+    max-width: 200px;
+    flex-wrap: wrap;
 }
 
 .navigation-icon{
@@ -658,6 +659,7 @@ body{
 .footer-contact-phone:hover{
     color: rgba(117, 97, 87, 1);
 }
+
 .footer-contact-phone:active{
     color: rgba(117, 97, 87, 0.3);
 }
@@ -989,7 +991,6 @@ body{
     color: rgba(255, 255, 255, 0.3);
 }
 
-
 /*Catalog.html*/
 .main-inner h1{
     font-size: 60px;
@@ -1015,6 +1016,7 @@ body{
     width: 1060px;
     margin: 0 auto;
 }
+
 .breadcrumbs{
     list-style-type: none;
     display: flex;
@@ -1030,6 +1032,7 @@ body{
     font-weight: 400;
     text-decoration: none;
 }
+
 .breadcrumbs-item{
     position: relative;
     padding-left: 28px;
@@ -1667,9 +1670,11 @@ body{
 .catalog-subscription{
     background-color: #FFFFFF;
 }
+
 .catalog-subscription h2{
     color: #000000;
 }
+
 .catalog-subscription p{
     color: #333333;
 }
