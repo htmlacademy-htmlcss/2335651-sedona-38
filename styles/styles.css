@@ -712,9 +712,9 @@ body{
     background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close{
+/* .modal-container-close{
     display: none;
-}
+} */
 
 .modal{
     position: relative;
@@ -752,6 +752,7 @@ body{
 .modal-button-close:focus,
 .date-form-field:focus{
     outline: 3px solid rgba(131, 179, 211, 1);
+    background-color: rgba(230, 230, 230, 1);
 }
 
 .modal-button-close:active{
@@ -826,7 +827,7 @@ body{
     margin: 0;
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     margin-left: 157px;
     color: rgba(51, 51, 51, 1);
 }
@@ -839,15 +840,22 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 10px;
     margin-bottom: 48px;
 }
 
 .number-people-adult,
 .number-people-child{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 247px;
+    max-width: 288px;
     min-height: 48px;
+    row-gap: 10px;
+}
+
+.number-people-child{
+    justify-content: end;
 }
 
 .label-number-people{
@@ -861,12 +869,13 @@ body{
     display:flex;
     background-color: rgba(242, 242, 242, 1);
     min-width: 110px;
-    margin-left: 48px;
+    height: 47px;
+    margin-left: 46px;
     border-radius: 4px;
 }
 
 .number-people-input{
-    width: 31px;
+    max-width: 30px;
     height: 48px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
@@ -877,16 +886,25 @@ body{
     background-color: transparent;
 }
 
+.number-people-input:focus-visible{
+    outline: none;
+}
+
 .button-number-people{
-    width: 40px;
+    width: 37px;
     border: none;
     background-color: rgba(242, 242, 242, 1);
     cursor: pointer;
     border-radius: 4px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+}
+
+.button-plus{
+}
+
+.button-minus{
+    margin-bottom: 4px;
 }
 
 .button-minus,
@@ -894,15 +912,44 @@ body{
     fill: rgba(117, 97, 87, 0.3);
 }
 
-.button-minus:hover,
-.button-plus:hover{
+.button-number-people:hover .button-minus,
+.button-number-people:hover .button-plus{
     fill: rgba(0, 0, 0, 1);
+}   
+
+.button-number-people:focus .button-minus,
+.button-number-people:focus .button-plus{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    outline: 3px solid rgba(130, 179, 211, 1);
+    fill: rgba(0, 0, 0, 1);
+}   
+
+.button-number-people:focus .button-plus{
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.button-number-people:focus .button-minus{
+    padding: 9px 3px;
+    box-sizing: border-box;
+}
+
+.button-number-people:focus{
+    outline: transparent;
+}
+
+.button-number-people:active .button-minus,
+.button-number-people:active .button-plus{
+    fill: rgba(0, 0, 0, 0.2);
 }   
 
 .field-number-child{
     display:flex;
     background-color: rgba(242, 242, 242, 1);
     min-width: 110px;
+    height: 47px;
     margin-left: 80px;
     border-radius: 4px;
 }
@@ -942,6 +989,7 @@ body{
 .tooltip-toggle:hover,
 .tooltip-toggle:focus{
     background-color: rgba(104, 162, 202, 1);
+    outline: transparent;
 }
 
 .tooltip-toggle:active{
