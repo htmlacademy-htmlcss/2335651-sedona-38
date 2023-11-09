@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
-  <body>
+  <body class="lock">
     <div class="page-container">
       <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
@@ -31,9 +33,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                       <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.99 1.7-4.87 0-4.38-3.6-7.96-8-7.96s-8 3.68-8 8.05a8 8 0 0 0 12.9 6.27l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.97 6 6 0 0 1 12 0 6 6 0 0 1-6 5.97Z"/>
                     </svg>
-                      <span class="visually-hidden">
-                        Поиск
-                      </span>
+                      <span class="visually-hidden">Поиск</span>
                   </a>
                 </li>
                 <li class="navigation-user-item">
@@ -42,16 +42,12 @@
                       <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
                     </svg>
                       <span class="favourites">12</span>
-                      <span class="visually-hidden">
-                        Избранное
-                      </span>
+                      <span class="visually-hidden">Избранное</span>
                   </a>
                 </li>
               <li class="navigation-user-item">
                 <a class="navigation-user-link button navigation-button" href="#">
-                  <span>
-                    Хочу сюда!
-                  </span>
+                  <span>Хочу сюда!</span>
                 </a>
               </li>
             </ul>
@@ -70,15 +66,11 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13">
                           <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
                         </svg>
-                        <span class="visually-hidden">
-                          Ссылка на главную страницу
-                        </span>
+                        <span class="visually-hidden">Ссылка на главную страницу</span>
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link breadcrumbs-link-current" aria-current="page">
-                    Гостиницы
-                    </a>
+                    <a class="breadcrumbs-link breadcrumbs-link-current" aria-current="page">Гостиницы</a>
                 </li>
             </ul>
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -137,7 +129,7 @@
                     </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
                 <div class="range-wrapper-inputs">
@@ -176,11 +168,13 @@
         <section class="catalog" data-test="catalog">
           <div class="catalog-sorting">
             <h2 class="catalog-title">Найдено гостиниц: <span class="numbers-pages">38</span></h2>
-              <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала дешевые</option>
-                  <option value="popular">Сначала дорогое</option>
-                  <option value="popular">Сначала популярное</option>
-              </select>
+              <div class="catalog-select-control">
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Сначала дешевые</option>
+                    <option value="popular">Сначала дорогое</option>
+                    <option value="popular">Сначала популярное</option>
+                </select>
+              </div>
               <div class="catalog-sorting-toggle">
                 <a class="card-grid-toggle card-toggle-current active">
                     <span class="visually-hidden">Показать карточки</span>
@@ -251,7 +245,7 @@
                         <a class="button card-button-detail" href="#">Подробнее</a>
                         <button class="button card-button-favourites" type="button">В избранное</button>
                         <span class="visually-hidden">Трехзвездочный отель</span>
-                        <img class="stars-images" src="images/catalog/stars-three.svg" width="90" height="17" alt="Трехзвездочный отель">
+                        <img class="stars-images" src="images/catalog/stars-three.svg" width="66" height="17" alt="Трехзвездочный отель">
                         <span class="product-card-rating">Рейтинг: 6,9</span>
                       </div>
                 </li>
@@ -268,7 +262,7 @@
                         <a class="button card-button-detail" href="#">Подробнее</a>
                         <button class="button card-button-favourites" type="button">В избранное</button>
                         <span class="visually-hidden">Двухзвездочный отель</span>
-                        <img class="stars-images" src="images/catalog/stars-two.svg" width="90" height="17" alt="Двухзвездочный отель">
+                        <img class="stars-images" src="images/catalog/stars-two.svg" width="42" height="17" alt="Двухзвездочный отель">
                         <span class="product-card-rating">Рейтинг: 5,0</span>
                       </div>
                 </li>
