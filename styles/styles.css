@@ -854,10 +854,6 @@ body{
     row-gap: 10px;
 }
 
-.number-people-child{
-    justify-content: end;
-}
-
 .label-number-people{
     font-weight: 700;
     font-size: 20px;
@@ -901,10 +897,12 @@ body{
 }
 
 .button-plus{
+    margin-top: 4px;
 }
 
 .button-minus{
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    margin-left: 2px;
 }
 
 .button-minus,
@@ -950,7 +948,7 @@ body{
     background-color: rgba(242, 242, 242, 1);
     min-width: 110px;
     height: 47px;
-    margin-left: 80px;
+    margin-left: 84px;
     border-radius: 4px;
 }
 
