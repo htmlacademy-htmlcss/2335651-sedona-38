@@ -1,16 +1,16 @@
 @font-face{
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face{
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -20,7 +20,7 @@ html{
 
 body{
   height: 100%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 1);
@@ -51,7 +51,7 @@ body{
 
 /*Buttons*/
 .button{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -181,7 +181,7 @@ body{
 }
 
 .navigation-current::after{
-  content:'';
+  content: "";
   position: absolute;
   height: 2px;
   width: calc(100% - 32px);
@@ -242,7 +242,7 @@ body{
 
 .favourites{
   position: absolute;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
@@ -362,7 +362,7 @@ body{
 }
 
 .advantages-title::after{
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   width: 60px;
@@ -585,7 +585,7 @@ body{
 }
 
 .subscription input{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   background-color: rgba(242, 242, 242, 1);
   border: none;
   font-weight: 700;
@@ -780,7 +780,7 @@ body{
   height: 48px;
   border: none;
   background-color: rgba(242, 242, 242, 1);
-  font-family: 'PT Sans',sans-serif;
+  font-family: "PT Sans",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -814,7 +814,7 @@ body{
 }
 
 .field-date{
-  font-family: 'PT Sans',sans-serif;
+  font-family: "PT Sans",sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -873,7 +873,7 @@ body{
 .number-people-input{
   max-width: 30px;
   height: 48px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1023,7 +1023,7 @@ body{
 }
 
 .tooltip-text::after{
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -1242,9 +1242,9 @@ body{
   border-radius: 4px;
 }
 
-.control-input[type='checkbox']:checked +
+.control-input[type="checkbox"]:checked +
 .control-mark::after{
-  content: '';
+  content: "";
   position: absolute;
   background: url(../images/filter-arr.svg);
   width: 12px;
@@ -1260,7 +1260,7 @@ body{
   
 .control-input:checked +
 .control-mark-radio::after{
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -1312,7 +1312,7 @@ body{
 }
 
 .filter-button-close{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1365,7 +1365,7 @@ body{
   height: 48px;
   background-color: transparent;
   border: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1526,7 +1526,7 @@ body{
 }
 
 .select-control{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1703,7 +1703,7 @@ body{
 }
 
 .pagination::after{
-  content: '';
+  content: "";
   position: absolute;
   width: 1060px;
   height: 1px;
