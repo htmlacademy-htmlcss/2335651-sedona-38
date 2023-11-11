@@ -1486,11 +1486,12 @@ body{
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
-  max-width: 340px;
+  max-width: 440px;
+  margin-right: auto;
 }
 
 .catalog-sorting-toggle{
-  margin-left: auto;
+  margin-left: 70px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -1499,8 +1500,6 @@ body{
 }
 
 .catalog-select-control{
-  margin-left: 200px;
-  margin-left: 200px;
   display: flex;
   flex-wrap: wrap;
   max-width: 300px;
@@ -1753,7 +1752,7 @@ body{
 /*Catalog-subscription*/
 .catalog-subscription{
   background-color: #ffffff;
-  padding-top: 91px;
+  padding-top: 95px;
   padding-bottom: 105px;
 }
 
