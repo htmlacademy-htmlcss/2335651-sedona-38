@@ -125,7 +125,7 @@
             <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input type="text" name="e-mail" placeholder="Ваш e-mail" id="newsletter-email">
+              <input type="text" name="e-mail" placeholder="Ваш e-mail" id="newsletter-email" required>
               <button class="button subscription-button" type="submit">Подписаться</button>
             </form>
         </section>
@@ -177,12 +177,12 @@
           <form class="date-search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="field-date" for="arrival-date">Дата Заезда:</label>
-                <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+                <input class="date-form-field" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" required>
             </p>
               <p class="date-message date-error-message">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="field-date" for="departure-date">Дата Выезда:</label>
-                <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
+                <input class="date-form-field" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" required>
             </p>
               <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
             <div class="number-people">
@@ -195,7 +195,7 @@
                       <path  d="M0 0v2h14V0H0Z"/>
                     </svg>
                   </button>
-                  <input class="number-people-input" type="number" placeholder="2" name="adult-number" id="adult-number">
+                  <input class="number-people-input" type="number" placeholder="2" name="adult-number" id="adult-number" required>
                   <button class="button-number-people button-add" type="button">
                     <span class="visually-hidden">Добавить</span>
                       <svg class="button-plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
@@ -226,7 +226,7 @@
                         <path d="M0 0v2h14V0H0Z"/>
                       </svg>
                     </button>
-                  <input class="number-people-input" type="number" placeholder="2" name="child-number" id="child-number">
+                  <input class="number-people-input" type="number" placeholder="2" name="child-number" id="child-number" required>
                     <button class="button-number-people button-add" type="button">
                       <span class="visually-hidden">Добавить</span>
                       <svg class="button-plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
