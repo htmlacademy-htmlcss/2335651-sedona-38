@@ -209,7 +209,7 @@ body{
 .navigation-link:focus,
 .navigation-icon:focus,
 .logo:focus{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .favourites{
@@ -221,7 +221,7 @@ body{
   color: #ffffff;
   width: 20px;
   height: 20px;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   border-radius: 50%;
   text-align: center;
   padding-top: 5px;
@@ -621,7 +621,7 @@ body{
 .footer-social-link:focus,
 .footer-contact-phone:focus,
 .htmlacademy-link:focus{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .footer-social-item{
@@ -653,7 +653,7 @@ body{
 }
 
 .footer-social-link{
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .footer-social-link:hover .footer-icon{
@@ -732,7 +732,7 @@ body{
 
 .modal-button-close:focus,
 .date-form-field:focus{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
 }
 
@@ -814,7 +814,7 @@ body{
 }
 
 .date-error-message{
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .number-people{
@@ -942,8 +942,13 @@ body{
 
 .number-people-input::-webkit-outer-spin-button,
 .number-people-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.number-people-input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .tooltip{
@@ -956,7 +961,7 @@ body{
 .tooltip-toggle{
   width: 26px;
   height: 26px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border: none;
   border-radius: 50%;
   fill: #ffffff;
@@ -1018,7 +1023,7 @@ body{
 }
 
 .button-date-search{
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   width: 100%;
   min-height: 60px;
   font-size: 20px;
@@ -1091,7 +1096,7 @@ body{
 
 .breadcrumbs-item{
   position: relative;
-  padding-left: 28px;
+  padding-left: 10px;
 }
 
 .breadcrumbs-item:first-child{
@@ -1135,8 +1140,7 @@ body{
 
 .breadcrumbs-item::after{
   content: url(../images/breadcrumbs-arr.svg);
-  position: absolute;
-  transform: translateX(10px);
+  margin-left: 7px;
 }
 
 .breadcrumbs-item:last-child::after{
@@ -1204,7 +1208,7 @@ body{
 
 .control-input:focus ~ .control-mark,
 .control-input:focus ~ .control-mark-radio{
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control{
@@ -1218,7 +1222,7 @@ body{
   width: 20px;
   height: 20px;
   border: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   top: 2px;
   cursor: pointer;
   border-radius: 4px;
@@ -1246,7 +1250,7 @@ body{
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   border-radius: 50%;
   top:5px;
   left: 5px;
@@ -1392,8 +1396,13 @@ body{
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+.range-input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .range-bar{
@@ -1512,6 +1521,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
   min-width: 292px;
   height: 49px;
   border: 2px solid #e5e5e5;
