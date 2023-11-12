@@ -258,8 +258,8 @@ body{
 
 /*Hero*/
 .hero{
-  background: url(../images/background-vector.svg),
-              url(../images/index-background.jpg);
+  background: url("../images/background-vector.svg"),
+              url("../images/index-background.jpg");
   background-color:rgb(102, 164, 163);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
@@ -378,19 +378,19 @@ body{
 }
 
 .services-item:nth-child(1){
-  background-image: url(../images/home.svg);
+  background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
 }
 
 .services-item:nth-child(2){
-  background-image: url(../images/food.svg);
+  background-image: url("../images/food.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
 }
 
 .services-item:nth-child(3){
-  background-image: url(../images/gift.svg);
+  background-image: url("../images/gift.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
 }
@@ -489,7 +489,7 @@ body{
 
 /*Subscription*/
 .index-subscription{
-  background-image: url(../images/background-subscription.jpg);
+  background-image: url("../images/background-subscription.jpg");
   background-color: rgb(102, 164, 163);
   background-size: cover;
   background-repeat: no-repeat;
@@ -720,7 +720,7 @@ body{
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url(../images/close-button.svg);
+  background-image: url("../images/close-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -769,7 +769,7 @@ body{
   padding-right: 50px;
   box-sizing: border-box;
   border-radius: 4px;
-  background-image: url(../images/calendar-vector.svg);
+  background-image: url("../images/calendar-vector.svg");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 20px);
   background-position-y: 14px;
@@ -1064,7 +1064,7 @@ body{
 
 /*Filter*/
 .filter{
-  background-image: url(../images/background-filter.jpg);
+  background-image: url("../images/background-filter.jpg");
   background-color: rgb(102, 164, 163);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1139,7 +1139,7 @@ body{
 
 
 .breadcrumbs-item::after{
-  content: url(../images/breadcrumbs-arr.svg);
+  content: url("../images/breadcrumbs-arr.svg");
   margin-left: 7px;
 }
 
@@ -1232,7 +1232,7 @@ body{
 .control-mark::after{
   content: "";
   position: absolute;
-  background: url(../images/filter-arr.svg);
+  background: url("../images/filter-arr.svg");
   width: 12px;
   height: 10px;
   background-repeat: no-repeat;
@@ -1529,7 +1529,7 @@ body{
   padding-left: 19px;
   padding-right: 50px;
   appearance: none;
-  background-image: url(../images/sorting-arr.svg);
+  background-image: url("../images/sorting-arr.svg");
   background-repeat: no-repeat;
   background-position-y: 18px;
   background-position-x: calc(100% - 17px);
