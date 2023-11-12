@@ -1711,7 +1711,7 @@ body{
   box-sizing: border-box;
   text-decoration: none;
   color: #ffffff;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background-color: #82b3d3;
   margin-right: 8px;
